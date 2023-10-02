@@ -1,0 +1,14 @@
+@import "./colors";
+@import "./variables";
+@import "./apphome";
+
+body {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+ul {
+  list-style: none;
+  outline: none;
+}
