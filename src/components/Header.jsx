@@ -85,9 +85,11 @@ export default function Header() {
                 </a>
 
                 <li>
-                  <button className="bg-[#120b48] text-white font-bold  hover:duration-700 rounded-xl p-4 px-8">
-                    Get Started
-                  </button>
+                  <Link to={"/webhome"}>
+                    <button className="bg-[#120b48] text-white font-bold  hover:duration-700 rounded-xl p-4 px-8">
+                      Get Started
+                    </button>
+                  </Link>
                 </li>
               </ul>
             </div>
