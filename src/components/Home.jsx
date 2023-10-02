@@ -1,24 +1,25 @@
 import { Fragment } from "react";
 import Headroom from "react-headroom";
 import { Helmet } from "react-helmet";
-// import { motion } from "framer-motion";
-import Grandma from "../assets/grandma.svg";
-import KidAndFather from "../assets/kidandfather.svg";
-import PrettyLady from "../assets/prettylady.svg";
-import Updots from "../assets/updots.svg";
-import Belowdots from "../assets/belowdots.svg";
-import Circle from "../assets/circle.jpg";
-import Share from "../assets/share.jpg";
-import VideoDemo from "../assets/videodemo.svg";
-import Visit from "../assets/visit.jpg";
-import One from "../assets/one.jpg";
-import Two from "../assets/two.jpg";
-import Three from "../assets/three.jpg";
-import Rec from "../assets/rec.jpg";
 import Icon from "@mdi/react";
 import { mdiArrowRightThin } from "@mdi/js";
 import Footer from "../components/Footer";
 import Header from "./Header";
+import {
+  Belowdots,
+  Circle,
+  Grandma,
+  KidAndFather,
+  One,
+  PrettyLady,
+  Rec,
+  Share,
+  Three,
+  Two,
+  Updots,
+  VideoDemo,
+  Visit,
+} from "../lib/image";
 
 export default function Home() {
   return (
@@ -33,17 +34,23 @@ export default function Home() {
         </Headroom>
 
         <main className="">
-          <div className="md:px-[80px] px-16 border-b border-b-[30px] py-[70px] md:pt-[130px] flex flex-col md:flex-row md:justify-between">
-            <div className="md:pt-[70px] ">
-              <h1 className="font-bold text-[40px] w-[270px] md:text-[50px] text-center m-auto md:text-left md:w-[400px] ">
+          <div className="md:px-[80px] px-16 border-b border-b-[30px] py-[70px] md:pt-[130px] flex flex-col md:flex-row md:justify-between items-center">
+            <div className="max-w-[35rem] w-[100%]">
+              <h1 className="font-bold text-[40px] md:text-[4rem] leading-tight  text-center m-auto md:text-left w-[100%] ">
                 Show Them Don&apos;t just tell{" "}
               </h1>
-              <p className="text-center m-auto text-[12px] md:text-left w-[270px] md:w-[380px] py-6 leading-8 ">
+              <p className="text-[1.2rem] text-[ rgba(0, 0, 0, 0.75)] md:text-left w-full py-6 leading-8 ">
                 Help your friends and loved ones by creating and sending videos
                 on how to get things done on a website.
               </p>
-              <button className="text-[14px] flex m-auto md:m-0 text-white bg-[#120b48] hover:bg-[#605c84] hover:shadow-xl hover:duration-700 p-4 px-6 rounded-xl ">
-                <a href="https://drive.google.com/drive/folders/1SCjSqhZXxS-QnEzO7vnXyOCRd7hfJTQp?usp=drive_link" className="pt-[8px]" target="blank">Install HelpMeOut</a>
+              <button className="text-[14px] flex items-center m-auto md:m-0 text-white bg-[#120b48] hover:bg-[#605c84] hover:shadow-xl hover:duration-700 p-4 px-6 rounded-xl ">
+                <a
+                  href="https://drive.google.com/drive/folders/1SCjSqhZXxS-QnEzO7vnXyOCRd7hfJTQp"
+                  className="pt-[8px]"
+                  target="_blank" rel="noreferrer"
+                >
+                  Install HelpMeOut
+                </a>
                 <Icon
                   path={mdiArrowRightThin}
                   size={2}
